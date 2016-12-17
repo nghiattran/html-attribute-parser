@@ -1,11 +1,11 @@
 {
   "name": "html-attribute-parser",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Attribute parser for html tag",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec"
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha --report html -- -R spec"
   },
   "engines": {
     "node": ">=0.10.0"
