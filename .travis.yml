@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - 'stable'
+  - 'iojs'
+  - v5
+  - v4
+
+script: 'npm run cover'
+
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
